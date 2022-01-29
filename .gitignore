@@ -2,3 +2,5 @@
 ~*
 #*
 cmake-*
+.coverage
+*/__pycache__
