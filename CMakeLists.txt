@@ -5,4 +5,4 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake" ${CMAKE_MODULE_PATH})
 
 
-add_executable(ProjectTemplate main.cpp)
+add_executable(ProjectTemplate apps/main.cpp)
