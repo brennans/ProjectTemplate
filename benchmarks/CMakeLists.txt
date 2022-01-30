@@ -1,0 +1,2 @@
+add_executable(bench_template bench_template.cpp bench_template.cpp)
+target_link_libraries(bench_template PUBLIC benchmark benchmark_main)
