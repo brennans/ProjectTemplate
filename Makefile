@@ -12,3 +12,7 @@ benchmark :
 scripts :
 	poetry run black .
 	poetry run pytest --cov . ./tests/
+
+.PHONY : docs
+docs :
+	mkdocs serve
