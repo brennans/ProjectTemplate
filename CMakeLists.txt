@@ -8,6 +8,20 @@ include(FetchContent)
 include(project_warnings)
 include(google_deps)
 
+## Conan Packages
+include(cmake/conan.cmake)
+conan_cmake_run(CONANFILE conanfile.txt  # or relative build/conanfile.txt
+        BASIC_SETUP CMAKE_TARGETS
+        BUILD missing)
+## Conan packages
+if(EXISTS ${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
+    include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
+    conan_basic_setup()
+else()
+    message(WARNING "The file conanbuildinfo.cmake doesn't exist, you have to run conan install first")
+endif()
+message("Conan Libs: ${CONAN_LIBS}")
+
 add_library(ProjectTemplate src/ProjectTemplate.cpp)
 
 

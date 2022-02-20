@@ -6,6 +6,7 @@ FetchContent_Declare(
 set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(googletest)
 
+option(BENCHMARK_ENABLE_TESTING "Enable testing of the benchmark library." OFF)
 FetchContent_Declare(
         googlebenchmark
         URL https://github.com/google/benchmark/archive/a17480dd34b147109bd1f1776e11e613b4a27df7.zip
