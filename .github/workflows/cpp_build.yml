@@ -48,4 +48,4 @@ jobs:
       - name: Benchmark
         working-directory: ${{github.workspace}}/build
         # Execute benchmarks defined by the CMake configuration.
-        run: ./benchmarks/bench_*
+        run: ./bin/bench_*
