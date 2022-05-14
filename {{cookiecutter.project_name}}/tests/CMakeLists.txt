@@ -16,4 +16,4 @@ macro(package_add_test TESTNAME UNIT)
     set_target_properties(${TESTNAME} PROPERTIES FOLDER tests)
 endmacro()
 
-package_add_test(Test_ProjectTemplate ProjectTemplate test_ProjectTemplate.cpp)
+package_add_test(Test_{{project_name}} {{project_name}} test_{{project_name}}.cpp)

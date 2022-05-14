@@ -16,3 +16,8 @@ scripts :
 .PHONY : docs
 docs :
 	mkdocs serve
+
+cmake_cpp:
+	mkdir build; cd build
+	cmake ..
+	make build
