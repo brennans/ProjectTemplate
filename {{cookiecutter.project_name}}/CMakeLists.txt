@@ -23,7 +23,9 @@ endif()
 message("Conan Libs: ${CONAN_LIBS}")
 
 add_library({{cookiecutter.project_name}} src/{{cookiecutter.project_name}}.cpp)
-
+target_include_directories({{cookiecutter.project_name}}
+        PUBLIC
+        include/)
 
 add_executable({{cookiecutter.project_name}}App apps/main.cpp)
 target_link_libraries({{cookiecutter.project_name}}App PRIVATE

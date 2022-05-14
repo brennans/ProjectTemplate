@@ -18,6 +18,5 @@ docs :
 	mkdocs serve
 
 cmake_cpp:
-	mkdir build; cd build
-	cmake ..
-	make build
+	cmake -DCMAKE_BUILD_TYPE=Debug -S . -B build
+	cmake --build build
