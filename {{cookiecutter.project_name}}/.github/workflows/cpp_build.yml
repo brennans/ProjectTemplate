@@ -24,7 +24,8 @@ jobs:
         run: |
           sudo apt update
           sudo apt install libgl-dev libglu1-mesa-dev \
-              libx11-devlibx11-xcb-dev \
+              libx11-dev \
+              libx11-xcb-dev \
               libfontenc-dev \
               libice-dev \
               libsm-dev \
