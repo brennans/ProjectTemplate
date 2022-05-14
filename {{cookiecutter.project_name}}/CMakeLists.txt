@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.20)
-project({{project_name}})
+project({{cookiecutter.project_name}})
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake" ${CMAKE_MODULE_PATH})
@@ -22,12 +22,12 @@ else()
 endif()
 message("Conan Libs: ${CONAN_LIBS}")
 
-add_library({{project_name}} src/{{project_name}}.cpp)
+add_library({{cookiecutter.project_name}} src/{{cookiecutter.project_name}}.cpp)
 
 
-add_executable({{project_name}}App apps/main.cpp)
-target_link_libraries({{project_name}}App PRIVATE
-        {{project_name}})
+add_executable({{cookiecutter.project_name}}App apps/main.cpp)
+target_link_libraries({{cookiecutter.project_name}}App PRIVATE
+        {{cookiecutter.project_name}})
 
 option(PACKAGE_TESTS "Build the tests" ON)
 if(PACKAGE_TESTS)

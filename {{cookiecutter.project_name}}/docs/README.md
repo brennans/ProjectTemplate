@@ -1,4 +1,4 @@
-# {{project_name}}
+# {{cookiecutter.project_name}}
 Project created from template for a cmake-based C++ project with auxiliary python scripts.
 
 ## C++ Project

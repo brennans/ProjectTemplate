@@ -1,1 +1,1 @@
-cookiecutter -o tmp --no-input .
+cookiecutter -v -o tmp --no-input .

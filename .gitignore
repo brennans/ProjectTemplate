@@ -1,0 +1,7 @@
+.idea
+~*
+#*
+cmake-*
+.coverage
+*/__pycache__
+tmp/
