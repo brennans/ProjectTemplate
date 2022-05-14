@@ -20,3 +20,6 @@ docs :
 cmake_cpp:
 	cmake -DCMAKE_BUILD_TYPE=Debug -S . -B build
 	cmake --build build
+
+update_from_template:
+	cruft update
