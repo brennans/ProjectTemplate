@@ -24,6 +24,7 @@ cmake_cpp:
 update_from_template:
 	git switch template
 	cruft update
-	git commit -am "Update from template"
+	git add .cruft.json
+	git commit -m "Update from template"
 	git switch main
 	git merge template
