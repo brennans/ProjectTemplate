@@ -4,6 +4,7 @@ Project created from template for a cmake-based C++ project with auxiliary pytho
 ## C++ Project
 
 Uses:
+
 - conan
 - cmake
 - googletest
@@ -11,6 +12,7 @@ Uses:
 
 ## Python Scripts
 Uses:
+
 - poetry
 - black 
 - pytest
