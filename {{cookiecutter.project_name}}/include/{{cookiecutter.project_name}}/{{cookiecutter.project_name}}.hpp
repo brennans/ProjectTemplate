@@ -1,6 +1,6 @@
-#ifndef PROJECTTEMPLATE_LIB_HPP
-#define PROJECTTEMPLATE_LIB_HPP
+#ifndef {{ cookiecutter.project_name | upper()}}_HPP
+#define {{ cookiecutter.project_name | upper()}}_HPP
 
 
 
-#endif //PROJECTTEMPLATE_LIB_HPP
+#endif // {{ cookiecutter.project_name | upper()}}_HPP
